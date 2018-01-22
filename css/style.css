@@ -5,56 +5,37 @@
 
 /*STATUS BAR*/
 
-.status-bar {
-  display: inline-block;
-  background-color: #fff;
+.bar{
+  background: url(status-bar.png) no-repeat top center;
+  background-size: cover;
+  margin: 0px auto;
+  width: 600px;
   margin-left: 20px;
-  padding: 10px;
-  background-color: #323251;
-
+  height: 35px;
 }
-
-
-.bars, .service, .cellular, .time, .bluetooth, .battery {
-  display: inline-block;
- width: 80px;
-
-
-}
-
-h6 {
-  font-size: 1em;
-  /* margin-top: 30px; */
-  color: white;
-  font-family: helvetica;
-}
-
-.bluetooth, .battery {
-  color: white;
-}
-
 
 /*top BAR*/
 
-.topbar{
-  display: inline-block;
+.top{
   margin-left: 20px;
-  padding: 20px;
   background-color: #323251;
-}
-
-.left-arrow,.heading, .star{
-  display: inline-block;
-}
-
-h7 {
-  font-size: 1.4em;
+  overflow: auto;
   color: white;
-  font-family: helvetica;
+  width: 600px;
 }
 
-.left-arrow, .startop {
+.top a {
+  float: left;
+  text-align: center;
+  width: 50%;
+  padding: 18px 0;
+  transition: all .3s ease;
+  font-size: 20px;
   color: white;
+}
+
+.top a:hover {
+  background-color: #000;
 }
 
 
@@ -74,47 +55,80 @@ h7 {
 
 .route {
   background-color: #02021F;
-/*   padding: 5px; */
-/*   border: 4px solid #fff; */
+  margin-left: 20px;
+  width: 600px;
 }
 
+.name{
+  background-color: #02021F;
+  /* margin-left: 50px; */
+  border: .5px solid #979797;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.bus-info{
+  background-color: #02021F;
+  /* margin-left: 50px; */
+  border: .5px solid #979797;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+
+.bus-info:hover{
+    background-color: #777;
+}
 
 h3, .busicon{
   display: inline-block;
   font-family: helvetica;
 }
 
+.busicon {
+  width: 20px;
+}
+
+h3 {
+  border: 1px solid #ffffff
+}
+
 h1 {
   color: white;
-  font-size: 1.2em;
+  font-size: 1.5;
   font-weight: 700;
-  line-height: 2em;
-  font-family: helvetica;
+  line-height: .5em;
+  font-family: Avenir;
 }
 
 h3 {
   color: white;
   font-weight: 900;
-  line-height: 1.8em;
-  font-family: helvetica;
+  line-height: 1.5em;
+  font-family: Avenir;
+  font-size: 15;
 }
 
 
 h4 {
   color: white;
-  line-height: 1.2em;
-  font-family: helvetica;
+  line-height: 1.4em;
+  font-family: Avenir;
+  font-size: 15;
+  font-weight: 700;
 }
 
 h5 {
   color: white;
   line-height: 1.2em;
-  font-family: helvetica;
+  font-family: Avenir;
+  font-size: 15;
+  font-weight: lighter;
 }
 
-.bus-info:hover {
-  background-color: #777;
-}
+
 
 .busicon{
   color: white;
@@ -124,7 +138,7 @@ h5 {
   display: inline-block;
   float:right;
   margin-top: 35px;
-  margin-right: 60px;
+  margin-right: 70px;
   color: white;
 }
 
@@ -135,6 +149,8 @@ h5 {
   color: #555;
   overflow: auto;
   background-color: #323251;
+  margin-left: 20px;
+  width: 600px;
 }
 
 .iconbar a {
