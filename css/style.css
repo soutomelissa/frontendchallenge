@@ -5,39 +5,65 @@
 
 /*STATUS BAR*/
 
-.bar{
+/* .bar{
   background: url(status-bar.png) no-repeat top center;
   background-size: cover;
   margin: 0px auto;
-  width: 600px;
+  width: 375px;
   margin-left: 20px;
   height: 35px;
-}
+} */
 
 /*top BAR*/
 
 .top{
   margin-left: 20px;
-  background-color: #323251;
+  background-color: #F5F5F5;
   overflow: auto;
   color: white;
-  width: 600px;
+  width: 375px;
+  height: 55px;
 }
 
 .top a {
   float: left;
   text-align: center;
-  width: 50%;
+  width:75px;
+  padding: 18px 0;
+  transition: all .3s ease;
+  font-size: 20px;
+  color: #02021F;
+}
+
+.top a:hover {
+  background-color: #778899;
+}
+
+.top-right{
+  float: right;
+  text-align: center;
+  width:75px;
   padding: 18px 0;
   transition: all .3s ease;
   font-size: 20px;
   color: white;
+  margin-top: -17px;
 }
 
-.top a:hover {
-  background-color: #000;
+.top-right a:hover {
+  background-color: #778899;
 }
 
+.title{
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 5px;
+  margin-left: 17px;
+}
+
+.top, .title, .top-right {
+  display: inline-block;
+}
 
 /*Map*/
 
@@ -45,62 +71,65 @@
   background: url(map.png) no-repeat top center;
   background-size: cover;
   margin: 0px auto;
-  width: 600px;
+  width: 375px;
   margin-left: 20px;
-  height: 500px;
+  height: 300px;
 }
+
+
+/*scroll menu*/
+.vertical-menu {
+    width: 375px; /* Set a width if you like */
+    height:200px;
+    overflow-y: auto;
+    margin-left: 20px;
+}
+
+.vertical-menu a {
+    background-color: #DCDCDC; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
 
 
 /*routes*/
 
-.route {
-  background-color: #02021F;
-  margin-left: 20px;
-  width: 600px;
-}
-
-.name{
-  background-color: #02021F;
-  /* margin-left: 50px; */
-  border: .5px solid #979797;
-  padding-left: 50px;
-  padding-bottom: 10px;
-  padding-top: 20px;
-}
-
 .bus-info{
   background-color: #02021F;
-  /* margin-left: 50px; */
+  width: 375px;
+  /* margin-left: 20px; */
   border: .5px solid #979797;
-  padding-left: 50px;
+  padding-left: 30px;
   padding-bottom: 10px;
   padding-top: 10px;
+  color:white;
 }
-
 
 .bus-info:hover{
-    background-color: #777;
+    background-color: #778899;
 }
 
-h3, .busicon{
+h3, .bus-info-right{
   display: inline-block;
-  font-family: helvetica;
+  margin-bottom: 10px;
 }
 
-.busicon {
-  width: 20px;
-}
-
-h3 {
-  border: 1px solid #ffffff
+.right {
+  float: right;
+  margin-top: -80px;
+  margin-right: 35px;
 }
 
 h1 {
-  color: white;
+  color: #02021F;
   font-size: 1.5;
   font-weight: 700;
   line-height: .5em;
   font-family: Avenir;
+  letter-spacing: 1px;
 }
 
 h3 {
@@ -109,6 +138,7 @@ h3 {
   line-height: 1.5em;
   font-family: Avenir;
   font-size: 15;
+  /* border: 1px solid #ffffff */
 }
 
 
@@ -117,40 +147,28 @@ h4 {
   line-height: 1.4em;
   font-family: Avenir;
   font-size: 15;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h5 {
   color: white;
   line-height: 1.2em;
   font-family: Avenir;
-  font-size: 15;
   font-weight: lighter;
+  font-style: italic;
 }
 
-
-
-.busicon{
-  color: white;
+.bus-info-right{
+  margin-left: 50px;
 }
-
-.right-arrow {
-  display: inline-block;
-  float:right;
-  margin-top: 35px;
-  margin-right: 70px;
-  color: white;
-}
-
 
 /*menu*/
 
 .iconbar {
-  color: #555;
   overflow: auto;
-  background-color: #323251;
+  background-color: #F5F5F5;
   margin-left: 20px;
-  width: 600px;
+  width: 375px;
 }
 
 .iconbar a {
@@ -159,14 +177,15 @@ h5 {
   width: 20%;
   padding: 12px 0;
   transition: all .3s ease;
-  font-size: 36px;
-  color: white;
+  font-size: 24px;
+  color: #02021F;
 }
 
 .iconbar a:hover {
-  background-color: #000;
+  background-color:#778899
+;
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #9a9a9a;
 }
