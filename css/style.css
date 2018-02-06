@@ -5,18 +5,19 @@
   box-sizing: border-box;
 }
 
-/*STATUS BAR*/
+/* STATUS BAR*/
 
-/* .bar{
+.bar{
   background: url(status-bar.png) no-repeat top center;
-  background-size: cover;
+  background-size: contain;
   margin: 0px auto;
   width: 375px;
   margin-left: 20px;
+  margin-bottom: -15px;
   height: 35px;
-} */
+}
 
-/*top BAR*/
+/*top BAR */
 
 .top{
   margin-left: 20px;
@@ -25,6 +26,7 @@
   color: white;
   width: 375px;
   height: 55px;
+  margin-bottom: -5px;
 }
 
 .top a {
