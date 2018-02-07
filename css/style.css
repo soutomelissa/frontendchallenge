@@ -25,7 +25,6 @@
   overflow: auto;
   color: white;
   width: 375px;
-  height: 55px;
   margin-bottom: -5px;
 }
 
@@ -47,7 +46,7 @@
   float: right;
   text-align: center;
   width:75px;
-  padding: 18px 0;
+  padding: 18px 0 0 0;
   transition: all .3s ease;
   font-size: 20px;
   color: white;
@@ -116,15 +115,23 @@
     background-color: #778899;
 }
 
-h3, .bus-info-right{
+h3, .bus-info-left {
   display: inline-block;
 }
 
-.right {
-  float: right;
-  margin-top: -40px;
-  margin-right: 50px;
+.bus-info .right {
+  display: inline-block;
+  float:right;
+  width: 20%;
+  /* padding-right: 10%; */
+  margin-top: 7%;
 }
+
+.bus-info .bus-info-left {
+  display: inline-block;
+}
+
+
 
 h1 {
   color: #02021F;
@@ -141,6 +148,7 @@ h3 {
   line-height: 1.2em;
   font-family: Avenir;
   font-size: 15;
+  padding-left: 5px;
   /* border: 1px solid #ffffff */
 }
 
@@ -164,6 +172,9 @@ h5 {
 .bus-info-right{
   margin-left: 50px;
 }
+
+
+
 
 /*menu*/
 
